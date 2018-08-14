@@ -2,7 +2,7 @@
 
 Application to get fraction of Indonesian Money in Rupiah
 
-##Live App
+## Live App
 
 [Pecahan-rupiah](https://pecahan-rupiah.herokuapp.com/) - hosted in HEROKU
 
