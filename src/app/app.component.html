@@ -1,7 +1,7 @@
 <div class="container">
   <h3>Aplikasi Pecahan Rupiah</h3>
 
-  <form (ngSubmit)="onSubmit()" [formGroup]="uangForm" action="" (keydown)="onPressEnter($event)">
+  <form (ngSubmit)="onSubmit()" [formGroup]="uangForm" action="" (keydown)="onPressEnter($event)" id="form">
     <div class="form-group">
       <input type="text" formControlName="uang" id="uang" placeholder="Rp 17500" class="form-control">
       <span *ngIf="!uangForm.get('uang').valid && uangForm.get('uang').errors.required"> can not be empty </span> 
