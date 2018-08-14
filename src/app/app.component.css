@@ -1,0 +1,30 @@
+.container {
+    text-align: center;
+}
+
+span{
+    display: block;
+    color: red;
+    font-size: 10px;
+}
+
+input{
+    display: block; 
+    margin: 0 auto;
+}
+
+.submit-btn{
+    margin-top: 10px;
+}
+
+.result-box{
+    margin: 10px;
+    text-align: center;
+    border: 1px dashed black;
+    border-radius: 4px;
+    max-width: auto;
+}
+
+.result-box label {
+    display: block;
+}

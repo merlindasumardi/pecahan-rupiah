@@ -10,7 +10,7 @@ export class AppComponent implements OnInit {
   title = 'pecahan-rupiah';
   uangForm: FormGroup;
   uangPattern = /^(\R\p)?\s?(\d+(\.\d{3})*|(\d+))(\,\d{0,2})?$/;
-
+  nominal: any;
   map = {
     100000: 0,
     50000: 0,
@@ -51,7 +51,7 @@ export class AppComponent implements OnInit {
 
   getPecahan(uang) {
     this.pecahan = [];
-    if (uang % 2 !== 0) {
+    if (uang % 50 !== 0 && uang < 50) {
       alert('Tidak dapat dihitung');
     }
 
