@@ -5,24 +5,30 @@
 span{
     display: block;
     color: red;
-    font-size: 10px;
+    font-size: 14px;
 }
 
 input{
     display: block; 
-    margin: 0 auto;
+    margin: 10px auto;
+    font-size: 14px;
+    text-align: center;
 }
 
 .submit-btn{
     margin-top: 10px;
+    font-size: 14px;
+    background-color: blue;
+    color: #ffffff;
 }
 
 .result-box{
-    margin: 10px;
+    margin: 15px auto;
     text-align: center;
     border: 1px dashed black;
     border-radius: 4px;
-    max-width: auto;
+    max-width: 400px;
+
 }
 
 .result-box label {

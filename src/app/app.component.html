@@ -1,9 +1,9 @@
 <div class="container">
-  <h3>Aplikasi Pecahan Rupiah</h3>
+  <h2>Aplikasi Pecahan Rupiah</h2>
 
   <form (ngSubmit)="onSubmit()" [formGroup]="uangForm" action="" (keydown)="onPressEnter($event)" >
     <div class="form-group">
-      <label for="">Nominal</label>
+      <label for="">Masukkan nominal untuk mendapatkan pecahan. contoh input: Rp 17.500, Rp17500, 17500, 17500,00, 17.500</label>
       <input type="text" formControlName="uang" id="uang" placeholder="Rp 17500" class="form-control">
       <span *ngIf="!uangForm.get('uang').valid && uangForm.get('uang').errors.required"> *tidak boleh kosong </span> 
       <span *ngIf="!uangForm.get('uang').valid && uangForm.get('uang').errors.pattern">*invalid input, input tidak boleh mengandung spasi dan koma sebagai pemisah ribuan, Rp harus di depan, dan Rp harus di sertai nominal</span>
